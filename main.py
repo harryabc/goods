@@ -1,7 +1,4 @@
-from flask import Flask, request, abort
-import json
-import requests
-
+from flask import Flask
 from flask import jsonify
 app = Flask(__name__)
 
@@ -11,29 +8,46 @@ def hello_world():
 
 @app.route('/api/goods', methods=['GET'])
 def goods():
+
     data = [
         {
-            'id': '001',
-            'name': 'iphone 13',
-            'icon': 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwx2.sinaimg.cn%2Fmw690%2F005JnC28gy1gv29r6vixbj60u90sugmn02.jpg&refer=http%3A%2F%2Fwx2.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636543502&t=d76bee196a40aaaa1ccad2f1776f0c14',
-            'price': 7999
+            "id": 1,
+            "name": "Apple iPhone 13",
+            "image": "https://img1.360buyimg.com/img/jfs/t1/206327/14/6656/37878/614182f3Ec0388cb1/9c624f9cdc0ef6b0.jpg",
+            "price": "9799.00",
+            "ware": "京东自营"
         },
         {
-            'id': '002',
-            'name': 'iphone 12',
-            'icon': 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimgservice.suning.cn%2Fuimg1%2Fb2c%2Fimage%2FgX79QCob9Xsc-m1QKulpKw.png_800w_800h_4e&refer=http%3A%2F%2Fimgservice.suning.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636543266&t=2cd7386edcb25f99dece44a34e0a08d3',
-            'price': 5999
+            "id": 2,
+            "name": "Apple iPhone 13",
+            "image": "https://img10.360buyimg.com/img/jfs/t1/82549/18/16596/35941/6141c60bE7c2fab8a/e619bc383c1f524a.jpg",
+            "price": "8799.00",
+            "ware": "天猫"
         },
         {
-            'id': '003',
-            'name': 'iphone 11',
-            'icon': 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimage.suning.cn%2Fuimg%2FZR%2Fshare_order%2F161601868603214243.jpg&refer=http%3A%2F%2Fimage.suning.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636543591&t=2dd249867f03452826633dbd7f06b439',
-            'price': 3999
+            "id": 3,
+            "name": "小米Redmi 红米note9",
+            "image": "https://img10.360buyimg.com/img/jfs/t1/168666/4/23738/170302/613ca1edE34ec60b1/f3c2ba7bbf84a149.jpg",
+            "price": "1099.00",
+            "ware": "淘宝"
         },
+        {
+            "id": 4,
+            "name": "ROG游戏手机5s",
+            "image": "https://img11.360buyimg.com/img/jfs/t1/192403/9/21433/117581/6130856cE2b75c0c7/fa706f41b56b77c6.jpg",
+            "price": "4499.00",
+            "ware": "淘宝"
+        },
+        {
+            "id": 5,
+            "name": "vivo iQOO 7",
+            "image": "https://img10.360buyimg.com/img/jfs/t1/170012/31/21215/75108/61554ac7E0c731e73/d73ec930b6307bd4.jpg",
+            "price": "2998.00",
+            "ware": "淘宝"
+        }
     ]
 
     return jsonify(data)
-    # return json.dumps(data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8080)
