@@ -42,7 +42,7 @@ def goods():
             "id": 5,
             "name": "Apple iPhone 13 Pro",
             "image": "https://img14.360buyimg.com/img/jfs/t1/202422/15/6977/26859/6143579bE79557c8c/b72c71338a403952.jpg",
-            "price": "8998.00",
+            "price": "8999.00",
             "ware": "拼多多"
         }
     ]
