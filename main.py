@@ -15,7 +15,7 @@ def goods():
             "name": "Apple iPhone 13 Pro Max 256GB",
             "image": "https://img1.360buyimg.com/img/jfs/t1/206327/14/6656/37878/614182f3Ec0388cb1/9c624f9cdc0ef6b0.jpg",
             "price": "9799.00",
-            "ware": "天猫"
+            "ware": "天猫天猫天猫天猫天猫天猫天猫天猫天猫天猫天猫天猫"
         },
         {
             "id": 2,
